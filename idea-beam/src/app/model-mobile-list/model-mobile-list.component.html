@@ -1,0 +1,51 @@
+
+
+
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width : 33%
+    padding: 10px;
+    height: 400px; /* Should be removed. Only for demonstration */
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+</style>
+
+
+<div class="container">
+
+
+<h3>All Stores of Apple iphone pro 11 mobile Phone</h3>
+
+<div class="row" *ngIf="modelDetails">
+  <div class="column" style=" margin: 25px;" *ngFor = "let modelProduct1 of modelDetails.mobilePhones">
+
+    <div class="column" *ngFor = "let modelProduct of modelProduct1.storeProducts">
+    <img src="{{modelProduct.modelUrl}}" style="max-height: 150px; min-height: 150px" height="100px">
+    <h4>{{modelProduct.brandName}} {{modelProduct.phoneName}}  </h4>
+    <h6>{{modelProduct.storeName}}</h6>
+
+    <ul>
+      <li>Storage : {{modelProduct.phoneSpec}}</li>
+      <li>Today Price : Rs.{{modelProduct.price}}.00</li>
+      <li>Discount : {{modelProduct.discount}} %</li>
+    </ul>
+
+
+
+
+  </div>
+  <div></div>
+</div>
+

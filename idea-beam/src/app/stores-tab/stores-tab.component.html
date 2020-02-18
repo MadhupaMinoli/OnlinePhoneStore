@@ -1,0 +1,44 @@
+<style>
+    * {
+      box-sizing: border-box;
+    }
+
+    /* Create three equal columns that floats next to each other */
+    .column {
+      float: left;
+
+      padding: 10px;
+      height: 200px; /* Should be removed. Only for demonstration */
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    </style>
+
+
+  <div class="container">
+
+
+
+
+  <h3> All Mobile Phone Stores in Sri Lanka</h3>
+  <div class="row">
+    <div class="column" style=" margin: 25px;" *ngFor = "let store of stores" (click)="onclickMobile(store)" [routerLink]="['/stores', store.storeName] " [state]="{ data: store.storeProducts}">
+
+      <img src="{{store.url}}" style="max-height: 50px; min-height: 50px" height="25px">
+
+      <h6>{{store.storeName}}</h6>
+      <p><i>Call us - {{store.storeContactNo}}</i> </p>
+  <p>Visit us - {{store.address}}</p>
+
+    </div>
+
+  </div>
+  <div></div>
+
+
+

@@ -1,0 +1,40 @@
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width : 33%
+    padding: 10px;
+    height: 235px; /* Should be removed. Only for demonstration */
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+</style>
+
+
+<div class="container">
+
+
+
+<div>
+  <h3> Model Phones in Sri Lanka</h3>
+</div>
+  <div class="row" *ngIf="brandDetails">
+    <div class="column" style=" margin: 25px;" *ngFor = "let model of brandDetails.models"  (click)="onclickMobile(model)" [routerLink]="['/model', model.modelName] " [state]="{ data: model.phoneModelId}">
+      <img src="{{model.url}}" style="max-height: 150px; min-height: 150px" height="100px">
+      <h5>{{model.brandName}} {{model.modelName}} </h5>
+
+    </div>
+
+  </div>
+  <div></div>
+
+
