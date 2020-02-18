@@ -9,11 +9,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/idea-beam" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1XtwdHtMjbTIi27ly2MsItB6Izx" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -48,7 +49,7 @@
       <updated>1581878785298</updated>
       <workItem from="1581878788603" duration="620000" />
       <workItem from="1581930353981" duration="26400000" />
-      <workItem from="1581989970388" duration="3987000" />
+      <workItem from="1581989970388" duration="4646000" />
     </task>
     <servers />
   </component>
